@@ -32,11 +32,23 @@ body {
 .section2-title {
   /* it will inherit the color from parent, and will ignore the decleration of h1,
    because specifity order of class is stronger than an html tag */
-  color: inherit;
+  /* color: inherit; */
 }
 #section2 {
   color: orange;
 }
+
+/* this called combinator */
+/* will targer any h1 element nested inside #section2 */
+/* it has heigher specifity, even than an id  because it has more information to reach the elemnet */
+#section2 h1 {
+  color: blue;
+}
+
+.section2-title{
+    color: red;
+}
+
 h1 {
   color: green;
 }
@@ -57,4 +69,7 @@ strongest to weakest to low
 -attribute selector : <button disabled >  </button>
 [disabled] {  }
 */
+
+/* questions */
+/* 1-what is the combinator  */
 </style>
