@@ -26,5 +26,21 @@ export default {
 </script>
 
 <style>
+body {
+    color:black
+}
+#section1 {
+    color: red;
+}
+.section2-title {
+
+}
+#section2 {
+    color: orange;
+}
+h1{
+    color: green;
+}
+
 
 </style>
