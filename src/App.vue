@@ -4,18 +4,10 @@
       <h1>get th freedom you desrve.</h1>
     </section>
     <section id="section2">
-      <h1 class="section2-title">
-        choose you plan
-      </h1>
+      <h1 class="section2-title">choose you plan</h1>
       <p>make sure</p>
       <button disabled>press</button>
     </section>
-      <div>
-        <div></div>
-        <p></p>
-        <h1></h1>
-        <p></p>
-      </div>
   </div>
 </template>
 
@@ -51,8 +43,8 @@ body {
   color: blue;
 }
 
-.section2-title{
-    color: red;
+.section2-title {
+  color: red;
 }
 
 h1 {
@@ -76,30 +68,56 @@ strongest to weakest to low
 [disabled] {  }
 */
 
-/* questions */
-/* 1-what is the combinator  */
-
-
 /* type of combinators */
 /* 
   1- Adjacent Sibling 
-  div + p {} 
+  div + p {}  // will effect p who is next to div  
       <section>
         <div></div>
-        <p></p>
+        <p></p> // this one will get effected
         <h1></h1>
-        <p></p>
+        <p></p> // not this
       </section >
+
   2- General Sibling 
-  div ~ p {}
+  div ~ p {}  // will effect p who is just sibling to div  
+      <section>
+        <div></div>
+        <p></p> // this one will get effected
+        <h1></h1>
+        <p></p> // and this
+      </section >
+
   3 Child 
-  div > p {}
+  div > p {} // will effect only direct child of div 
+      <section>
+          <div>
+              <p></p> // this one will get effected
+          </div>
+          <p></p> // not this
+          <section>
+              <p></p> // and not this
+          </section>
+      </section >
+
   4- Decendant 
   div p  {}
+      <section>
+          <div>
+              <p></p> // this one will get effected
+          </div>
+          <p></p> //  and this
+          <section>
+              <p></p> // and also
+          </section>
+      </section >
 
 */
 
+/* questions */
+/*   
+  1-what is the combinator  
+  2-
 
-
-/* test */
+*/
 </style>
