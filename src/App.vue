@@ -6,6 +6,10 @@
       </div>
       <div>
         <h1>hello there</h1>
+        <p>this is inline item</p>
+        <p>this is inline item</p>
+        <p>this is inline item</p>
+        <p>this is inline item</p>
       </div>
     </section>
   </div>
@@ -21,6 +25,28 @@ export default {
 </script>
 
 <style>
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+p {
+  display: inline-block;
+  /* display: inline; */
+  /* padding: 100px; */
+  color: white;
+  background: blue;
+  border: 5px solid red;
+  /* margin: 50px; */
+  /* margin-top: 20px; */
+
+  /* font-size: 50px; */
+}
+
+h1 + p {
+  visibility: hidden;
+}
+
 /* notes */
 /* 
 in css box model 
@@ -67,6 +93,27 @@ in css box model
   border and padding do not count
 
   box-sizing: border-box;  total width of the item here is content + padding +border = 500 
+ 
+  8- how to hide and element in from view port ?
+  display : none ;
+
+  9- what is the difference between block,inline, none  ?
+  -inline will take as much as it needs, but it do not accept padding, height/width, top/bottom margin
+  blcok is just a block, everything is cotrollable 
+  -none will display nothing
+  block is a block
+
+  10 how to mix between inline and block ?
+  display: inline-block ;
+
+  11- how to hide an element but keep its place ?
+  -If you only want to hide an element but you want to keep its place 
+  (i.e. other elements don't fill the empty spot), you can use 
+  visibility: hidden;
+
+
+
+
 }
   
 }
