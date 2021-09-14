@@ -21,6 +21,16 @@ export default {
 </script>
 
 <style>
+h1 {
+  width: 500px;
+  background: blue;
+  padding: 20px;
+  border: 4px solid black;
+  box-sizing: content-box;
+  /* content-box will effect content's width+height only 
+  border and padding do not count
+  */
+}
 /* 
 in css box model 
 - margin is not part of the core element 
@@ -46,7 +56,12 @@ questions
   make sure to fucking * {
   padding: 0%;
   margin: 0%;
+  6- what is the deafult value of box-sizing  ? what does it do ?
+  - box-sizing : content-box; means the assigned value to height and width effects content only,
+     border and padding are not included 
+  
 }
 
 */
 </style>
+
