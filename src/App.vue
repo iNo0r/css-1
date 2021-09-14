@@ -116,8 +116,10 @@ strongest to weakest to low
 
 /* questions */
 /*   
-  1-what is the combinator  
-  2-
+  1- what is the different types of combinators ?
+  2-  list down the order of specifity 
+  3-  list down the 5 types of selectors 
+  4- why do combinators has heigher order of specifty 
 
 */
 </style>
