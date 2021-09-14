@@ -4,7 +4,7 @@
       <div id="h1-container">
         <h1>hello there</h1>
       </div>
-      <div>
+      <div class="s2-container">
         <h1>hello there</h1>
         <p>this is inline item</p>
         <p>this is inline item</p>
@@ -31,7 +31,7 @@ export default {
   box-sizing: border-box;
 }
 p {
-  display: inline-block;
+  display: flex;
   /* display: inline; */
   /* padding: 100px; */
   color: white;
@@ -39,12 +39,20 @@ p {
   border: 5px solid red;
   /* margin: 50px; */
   /* margin-top: 20px; */
-
+  /* justify-content: center; */
+  text-align: center;
   /* font-size: 50px; */
+}
+.s2-container {
+  width: 100%;
+  /* text-align: center; */
 }
 
 h1 + p {
-  visibility: hidden;
+  /* visibility: hidden; */
+}
+div > h1 {
+  /* display: inline-block; */
 }
 
 /* notes */
@@ -110,6 +118,22 @@ in css box model
   -If you only want to hide an element but you want to keep its place 
   (i.e. other elements don't fill the empty spot), you can use 
   visibility: hidden;
+
+  12- how to align text which displayed inline, block or inline-block ? and can you align a list of items next to each other ?
+  text-align: center/right/...
+  vertical-align:middle;
+  yes
+  
+
+  13 how to align text which display flex ?
+  justifiy-content: center
+  align-items: center;
+
+  14- how to set a width = something - something ?
+  width: cacl(100% - 50px)
+
+
+
 
 
 
