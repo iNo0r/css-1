@@ -21,18 +21,7 @@ export default {
 </script>
 
 <style>
-h1 {
-  width: 500px;
-  background: blue;
-  padding: 20px;
-  margin: 0%;
-  border: 4px solid black;
-  /* box-sizing: content-box; total width of the item here is content + padding + border = 548  */
-  /* content-box will effect content's width+height only 
-  border and padding do not count
-  */
-  /* box-sizing: border-box;  total width of the item here is content + padding +border = 500  */
-}
+/* notes */
 /* 
 in css box model 
 - margin is not part of the core element 
@@ -41,8 +30,10 @@ in css box model
 
 
 
+ */
 
-questions
+/* questions */
+/* 
   1- where does the core element size ends, in terms of box model ?
   -border
   2-how to cancle the default  marign + padding style of all elements ?
@@ -64,6 +55,19 @@ questions
      border and padding are not included 
   7- what does box-sizing: border-box ; does  ?
   it makes the whole width of the item  (padding + border + content) 
+  h1 {
+  width: 500px;
+  background: blue;
+  padding: 20px;
+  margin: 0%;
+  border: 4px solid black;
+
+  box-sizing: content-box; total width of the item here is content + padding + border = 548 
+  content-box will effect content's width+height only 
+  border and padding do not count
+
+  box-sizing: border-box;  total width of the item here is content + padding +border = 500 
+}
   
 }
 
