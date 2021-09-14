@@ -56,6 +56,7 @@ questions
     for instance when you set height of something 100% it will inherit the base size from the first parent
   5- what is the most important thing to be done before starting a project ?
   make sure to fucking * {
+  box-sizing : border-box;
   padding: 0%;
   margin: 0%;
   6- what is the deafult value of box-sizing  ? what does it do ?
