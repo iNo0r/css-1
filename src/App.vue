@@ -10,6 +10,12 @@
       <p>make sure</p>
       <button disabled>press</button>
     </section>
+      <div>
+        <div></div>
+        <p></p>
+        <h1></h1>
+        <p></p>
+      </div>
   </div>
 </template>
 
@@ -72,6 +78,27 @@ strongest to weakest to low
 
 /* questions */
 /* 1-what is the combinator  */
+
+
+/* type of combinators */
+/* 
+  1- Adjacent Sibling 
+  div + p {} 
+      <section>
+        <div></div>
+        <p></p>
+        <h1></h1>
+        <p></p>
+      </section >
+  2- General Sibling 
+  div ~ p {}
+  3 Child 
+  div > p {}
+  4- Decendant 
+  div p  {}
+
+*/
+
 
 
 /* test */
