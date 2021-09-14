@@ -132,6 +132,19 @@ in css box model
   14- how to set a width = something - something ?
   width: cacl(100% - 50px)
 
+  15- what the difference between pseudo classes and psuedo elements ?
+  -classes : defines the style of a special state of an element 
+  :hover , :active ,:first-of-type 
+
+  element : defines the style of a specific part of an element  
+  ::after , ::before , ::first-letter 
+
+  16- how to add a word after p html tag ?
+    p:after {
+      content: " hi",
+      color:red;
+    }
+
 
 
 
