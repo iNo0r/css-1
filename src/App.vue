@@ -27,6 +27,19 @@ export default {
     }
   3- how to check specifity order ?
   chrome dev tools
+
+  4- set red color to every p element has the fucker class 
+  p.fucker {
+    color: red;
+  }
+
+  6-using psuedo calss, set blue color to every div element who has not the mother class
+  div:not(.mother){
+    color:blue;
+  }
+
+  7- name a website can check if a certain feature is supported by certain browser>
+    - can i use .com
 */
 </style>
 
