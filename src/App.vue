@@ -45,6 +45,24 @@
       </div>
     </article>
   </section>
+
+  <section class="section2-container">
+    <h1>Many Good Reasons to Stick Around</h1>
+    <ul>
+      <li>
+        <div></div>
+        <p>3,857,000 Trusting Customers</p>
+      </li>
+      <li>
+        <div></div>
+        <p>99.999% Uptime Guarantee</p>
+      </li>
+      <li>
+        <div></div>
+        <p>Lightning Fast CDN</p>
+      </li>
+    </ul>
+  </section>
 </template>
 
 <script>
@@ -62,6 +80,34 @@ export default {
   margin: 0%;
   padding: 0%;
 }
+/* section 2  */
+.section2-container {
+  margin-top: 20px;
+  color: white;
+  background: rgb(196, 57, 103);
+  text-align: center;
+  padding: 30px;
+}
+.section2-container > ul {
+  margin-top: 40px;
+}
+.section2-container > ul > li {
+  margin: 0 30px;
+  display: inline-block;
+  /*  to selte the default dots of a ul */
+  list-style-type: none;
+}
+.section2-container > ul > li > div {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  border: 2px solid black;
+  margin: auto;
+  margin-bottom: 20px;
+  background: rgb(202, 119, 191);
+}
+
+/* section 1 */
 .main-container {
   width: 100%;
   text-align: center;
@@ -73,9 +119,11 @@ export default {
 }
 .main-container article {
   background: rgb(169, 204, 149);
+  /* this should be added  */
   display: inline-block;
   width: calc(95% / 3);
   margin-left: 10px;
+  /* at vertical aligning whe gave this attribute to the child not the parent */
   vertical-align: middle;
   padding: 10px;
 }
@@ -92,6 +140,7 @@ export default {
 .main-container > article > h3 {
   margin: 20px auto;
 }
+/* som how this goes to the senod child  */
 .main-container > article:nth-child(3) {
   background: rgb(75, 172, 19);
 }
