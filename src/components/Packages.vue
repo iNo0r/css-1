@@ -45,6 +45,7 @@ section {
   border: green solid 5px;
 }
 section:nth-child(3) {
+  float: left;
   background: white;
 }
 section:nth-child(4) {
@@ -74,4 +75,22 @@ section > a > p {
 section:nth-child(4) > a > p {
   color: black;
 }
+
+/* notes */
+/* 
+  1- what is the good practice to differentiate with special props and genral props of an elemnt?
+  use class for general
+  use id for special
+  section {
+    backgound:blue;
+    width:200px
+  }
+  #special_section {
+    background : red;
+  }
+  2- what does float do ?
+  takes out an elemnt out of elements to a secified direction, which cause the other elements to surround th floating element 
+  *it is greate for positioning image in text
+
+*/
 </style>
