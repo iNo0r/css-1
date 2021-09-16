@@ -102,7 +102,7 @@ section:nth-child(4) > a > p {
   <div class="clearfix"></div>
   //css
   .clearfix {
-  clear: both;
+    clear: both;
   }
 
 
