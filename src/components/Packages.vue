@@ -16,6 +16,8 @@
       <p>Get started immediately at zero cost!</p>
     </a>
   </section>
+  <!-- used for fixing float behavior -->
+  <div class="clearfix"></div>
   <section>
     <a href="#">
       <h1>Our PREMIUM Plan</h1>
@@ -48,6 +50,10 @@ section:nth-child(3) {
   float: left;
   background: white;
 }
+.clearfix {
+  /* fixing float behavior  */
+  clear: both;
+}
 section:nth-child(4) {
   background: #1a4928;
 }
@@ -76,7 +82,7 @@ section:nth-child(4) > a > p {
   color: black;
 }
 
-/* notes */
+/* questions + notes */
 /* 
   1- what is the good practice to differentiate with special props and genral props of an elemnt?
   use class for general
@@ -91,6 +97,14 @@ section:nth-child(4) > a > p {
   2- what does float do ?
   takes out an elemnt out of elements to a secified direction, which cause the other elements to surround th floating element 
   *it is greate for positioning image in text
+  3- how to fix float bhavior ?
+  place this after the float ing element 
+  <div class="clearfix"></div>
+  //css
+  .clearfix {
+  clear: both;
+  }
+
 
 */
 </style>
