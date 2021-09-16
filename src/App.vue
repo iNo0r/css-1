@@ -52,6 +52,10 @@ body {
   width: 100%;
   background: #2ddf5c;
   padding: 8px 16px;
+  /* position: fixed; */
+  /* top: 0%;
+  right: 0%;
+  left: 0%; */
 }
 
 .main-header > div {

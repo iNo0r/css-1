@@ -104,11 +104,46 @@ section:nth-child(4) > a > p {
   .clearfix {
     clear: both;
   }
-  4- what using !important is a bad practice  ?
+  4- whay using !important is a bad practice  ?
   because it brakes the concept of specificity
   only use it with third part libraries  
 
-  
+  5- what is document flow  ?
+  is the order of displaying elements
+
+  6- what is the view port ?
+  is the visbile part of web page 
+
+  7- what are the 5 types of positioning ?
+  -static  
+  -relative
+  -abosulte
+  -fixed
+  -sticky 
+
+  8- does fixed element stays in the document flow ?
+  -it will still in the view port, but no longes included in the doument flow 
+  -will behave like inline-block
+  -default value of its horizantal postion is left, vertical none, which means if top or bottom not defined, it will not be visible
+
+  9- what is the defulat z-index of an element ?
+  0 
+
+  10- how can we set a background behind the diplayed elements ?
+  make position fixed and z-index = -1 
+
+  11-does margin of an element count in positiong absolute ?
+  yes
+
+  12 which container does the relatively positioned element belongs ?
+  itself
+
+  13 which positions take out the element out of the document flow ?
+  absolute and fixed  
+
+  14- What is the positioning context of an element after position: fixed  was applied?
+viewport
+
 
 
 */
