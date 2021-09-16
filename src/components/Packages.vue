@@ -33,13 +33,14 @@ export default {};
 </script>
 
 <style scoped>
+/* i want to make the whole block clickable as a  */
 section {
   box-sizing: border-box;
   background: #d2fed9;
   display: block;
   width: 80%;
   text-align: left;
-  padding: 25px;
+  /* padding: 25px; */
   margin: 20px auto;
   border: green solid 5px;
 }
@@ -57,6 +58,9 @@ section:nth-child(4) > a {
 section > a {
   text-decoration: none;
   color: black;
+  /* to add padding into an inline element it should be displayed as block  */
+  display: block;
+  padding: 25px;
 }
 section > a > h2 {
   color: gray;
