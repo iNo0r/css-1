@@ -104,6 +104,11 @@ section:nth-child(4) > a > p {
   .clearfix {
     clear: both;
   }
+  4- what using !important is a bad practice  ?
+  because it brakes the concept of specificity
+  only use it with third part libraries  
+
+  
 
 
 */
