@@ -135,14 +135,13 @@ section:nth-child(4) > a > p {
   11-does margin of an element count in positiong absolute ?
   yes
 
-  12 which container does the relatively positioned element belongs ?
+  12 which container does the relatively positioned element belongs to ?
   itself
 
   13 which positions take out the element out of the document flow ?
   absolute and fixed  
 
-  14- What is the positioning context of an element after position: fixed  was applied?
-viewport
+
 
 
 
