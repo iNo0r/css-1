@@ -1,7 +1,7 @@
 <template>
   <section>
     <a href="#">
-      <h1>Our PLUS Plan</h1>
+      <h1 id="sticky-exprement">Our PLUS Plan</h1>
       <h2>The most popular choice of our customers.</h2>
       <p>
         Benefit from increased storage and faster support to ensure that your
@@ -35,6 +35,10 @@ export default {};
 </script>
 
 <style scoped>
+#sticky-exprement {
+  position: sticky;
+  top: 0px;
+}
 /* i want to make the whole block clickable as a  */
 section {
   box-sizing: border-box;
@@ -141,6 +145,18 @@ section:nth-child(4) > a > p {
   13 which positions take out the element out of the document flow ?
   absolute and fixed  
 
+
+  ________________________________________________
+  14- what does overflow :hidden ? give example
+  it will hide anying belongs to it and not in the container
+  example if a relatively positioned elemnt is partially or compeltely out of its document flow, the over flowing part will be hidden
+
+
+  15-would the trick above work on html & body ?
+  yse but you have declare overflow : hidden in both
+
+  16 explain the behavior of position sticky ?
+    sticky will stick to its view port position as long as its *content* container appears
 
 
 
