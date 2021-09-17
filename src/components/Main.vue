@@ -79,6 +79,9 @@ export default {};
 #product-overview {
   background: url("freedom.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-position: 0% 100%; */
   width: 100%;
   height: 528px;
   padding: 10px;
@@ -202,23 +205,40 @@ export default {};
 /* notes & questions */
 
 /* 
-1- what is the behavior of { background-image: url("freedom.jpg");background-color: black;} ?
+1- What is the behavior of { background-image: url("freedom.jpg");background-color: black;} ?
   -the image will still be visible because you can define multiple backgrounds
 
-2- what is the behavior of { background: url("freedom.jpg");background: black;} ?
-what ever comes after will cancle what before it 
+2- What is the behavior of { background: url("freedom.jpg");background: black;} ?
+What ever comes after will cancle what before it 
 
-3- what is the behavior of {  background: url("freedom.jpg");background-size: 100px;}
+3- What is the behavior of {  background: url("freedom.jpg");background-size: 100px;}
 image will be reated vertically and horizontally.
 
-4- what are the background-size parameters ?
+4- What are the background-size parameters ?
 background-size: width height
-background-size: cover // will fill the container // with no empty spaces
+background-size: cover // will fill the container reasonbly // with no empty spaces
 background-size: contain // will make sure to show all of the photo 
 
-5- how to controll "repeat" on a background?
-property = background repeat
+5- How to controll "repeat" on a background?
+property = background-repeat
 values = no-repeat, repeat-x, repeat-y
+
+6- How to prevent another background appearing in the back of the background when moving it ?
+background-repeat: no-repeat
+
+7- why it is important to set size to cover and position to center ?
+cover will make sure the most possible of the picture is shown
+center will start will expand it 
+
+8- what is the differnce between using px and % in determining background-size: right top ; ?
+px will push it 
+
+% will crupt 
+
+9- what is the behavior of {background-position: 0% 100%;}
+showing full bottom will have heigher priority of top
+
+
 
 
 
