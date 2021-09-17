@@ -147,18 +147,28 @@ section:nth-child(4) > a > p {
 
 
   ________________________________________________
-  14- what does overflow :hidden ? give example
+  14- What does overflow :hidden ? give example
   it will hide anying belongs to it and not in the container
   example if a relatively positioned elemnt is partially or compeltely out of its document flow, the over flowing part will be hidden
 
 
-  15-would the trick above work on html & body ?
-  yse but you have declare overflow : hidden in both
+  15- Would the trick above work on html & body ?
+  Yes but you have declare overflow : hidden in both
 
-  16 explain the behavior of position sticky ?
-    sticky will stick to its view port position as long as its *content* container appears
+  16- Explain the behavior of position sticky.
+    Sticky will stick to its view port position as long as its *content* container appears.
+    Top should be declared
 
+  17- explain the concept of stacking context 
+    Created when applying fixed/sticky or absolute/relative in conjunction with z-index. 
+    It means while using z-index with positioning, a ChildA of ParentA can not appear over ParentB or its childeren, but siblilngs can appear over each other  
 
+  18- what is the positioning context for each of fixed, relative, absolute and sticky ?
+  fixed : viewport
+  relative: itself
+  absolute: first relativel ancetor 
+  sticky : viewport + relative ancestor 
+//commit 
 
 
 */
