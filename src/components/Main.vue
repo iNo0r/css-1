@@ -77,10 +77,12 @@ export default {};
 
 <style>
 #product-overview {
-  background: blue;
+  background: url("freedom.jpg");
   width: 100%;
   height: 528px;
   padding: 10px;
+  margin-top: 43px;
+  position: relative;
 }
 
 .section-title {
@@ -91,6 +93,15 @@ export default {};
 #product-overview h1 {
   color: white;
   font-family: "Anton", sans-serif;
+  position: absolute;
+  bottom: 5%;
+  left: 3%;
+}
+
+.plan__list {
+  width: 80%;
+  margin: auto;
+  text-align: center;
 }
 
 .plan {
