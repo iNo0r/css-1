@@ -115,4 +115,12 @@ export default {};
 .testimonial__text {
   margin: 3px;
 }
+
+/* 
+    how to set an img next to text ?
+    -convert the the image parent container into an inline-block 
+    - sit size to it 
+    -   make sure the text container inline-block too 
+    - use text-align to center and vertical-align to set them in the middle 
+*/
 </style>
