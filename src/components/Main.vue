@@ -77,15 +77,15 @@ export default {};
 
 <style>
 #product-overview {
-  background: url("freedom.jpg");
+  background-image: url("freedom.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  /* background-position: 0% 100%; */
+  background-position: left 10% bottom 20%;
+  background-origin: border-box;
+  background-clip: border-box;
   width: 100%;
   height: 528px;
   padding: 10px;
-  margin-top: 43px;
   position: relative;
 }
 
@@ -238,6 +238,49 @@ px will push it
 9- what is the behavior of {background-position: 0% 100%;}
 showing full bottom will have heigher priority of top
 
+---------------------------------------------
+
+14- What is {background-postion: center;} equal to ?
+background-position: 50% 50%
+
+15- What is {background-position: left top ;} equal to?
+background-position : 0% 0% ;
+It means positon context will start from left & top 
+
+16- What does {background-position: left 10% bottom 5% ;}  mean ?
+it will crop 10% from left, and 5% from bottom 
+
+17-  Define background-origin 
+  set background positioning area , (connect to background-position)
+  *it is the box sizing of background
+
+18- Define background-clip 
+  defines whethear backgrround extends underneath border
+
+19- Define background-attachment ?
+  setes the scrolling behaviour of the background image 
+
+20- What is the behaviour of {background-origin : content-box ;} ?
+if html tag has padding it will show it on sides 
+
+21- What is the behaviour of {background-origin : border-box ;} ?
+if there is border, beackground it will go beneath it 
+
+22- What is the behaviour of {background-clip : content-box ;} ?
+it will not go beneath border or padding
+
+23- What is the behaviour of {background-clip : padding-box ;} ?
+it will not go beneath padding but not border
+
+24 How to control the scroll behaviour or a background  ?
+utilizing background-attachment: local/fixed/scroll
+scroll : image will stay in palce and conten will scroll above it 
+fixed : image will fixed to viewport  
+
+25 How to use this shorthand "background" ?
+background: url position/size repeat  (clip&origin) attachment
+example : background: url("freedom.jpg"); left 10% top 5%/cover no-repeat border-box scroll
+example2 : background: url("freedom.jpg"); left 10% top 5%/cover no-repeat border-box content box scroll
 
 
 

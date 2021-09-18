@@ -50,7 +50,7 @@ body {
 
 .main-header {
   width: 100%;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   background: #2ddf5c;
