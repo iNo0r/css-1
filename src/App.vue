@@ -1,7 +1,12 @@
 <template>
   <header class="main-header">
     <div>
-      <a href="index.html" class="main-header__brand"> uHost </a>
+      <a href="index.html" class="main-header__brand">
+        <img
+          src="./images/uhost-icon.png"
+          alt="uHost - Your Favorite website"
+        />
+      </a>
     </div>
     <nav class="main-nav">
       <ul class="main-nav__items">
@@ -68,6 +73,12 @@ body {
   text-decoration: none;
   font-weight: bold;
   font-size: 22px;
+  display: inline-block;
+  width: 20px;
+}
+
+.main-header__brand img {
+  width: 100%;
 }
 
 .main-nav {
@@ -163,4 +174,12 @@ body {
 .button:focus {
   outline: none;
 }
+
+/* Questions */
+/* 
+  How image can be resized ?
+  by displaying its parent container as block or inline block,
+  and then set the parent into a certain width 
+  then set img width into 100%
+*/
 </style>

@@ -77,7 +77,7 @@ export default {};
 
 <style>
 #product-overview {
-  background-image: url("freedom.jpg");
+  background-image: url("../images/freedom.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left 10% bottom 20%;

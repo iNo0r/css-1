@@ -47,7 +47,7 @@ main {
 }
 
 .background {
-  background: url("plans-background.jpg");
+  background: url("../images/plans-background.jpg");
   color: black;
   width: 100%;
   height: 100%;
