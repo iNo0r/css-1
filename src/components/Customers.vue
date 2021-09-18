@@ -122,5 +122,14 @@ export default {};
     - sit size to it 
     -   make sure the text container inline-block too 
     - use text-align to center and vertical-align to set them in the middle 
+
+    How to blur an html element ?
+    filter: blue(10px)
+
+    What else filters can control ?
+    blur, brightness, contast, drop Shadow, grayscale, hue rotate, invert , opacity, saturate,sepia
+
+
+
 */
 </style>
