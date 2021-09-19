@@ -570,6 +570,9 @@ export default {};
   border-radius: 50%;
   margin: auto;
 }
+.key-feature__image {
+  padding: 20px;
+}
 
 .key-feature__description {
   text-align: center;
