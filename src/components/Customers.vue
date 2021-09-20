@@ -50,8 +50,8 @@ export default {};
 
 <style>
 .testimonial {
-  font-size: 20px;
-  margin: 48px 0;
+  font-size: 1.2rem;
+  margin: 3rem 0;
 }
 
 .testimonial__list {
@@ -60,11 +60,12 @@ export default {};
 }
 
 .testimonial:first-of-type {
-  margin-top: 96px;
+  margin-top: 6rem;
 }
 
 .testimonial__image-container {
   width: 65%;
+  max-width: 580px;
   display: inline-block;
   vertical-align: middle;
   box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.3);
@@ -77,7 +78,7 @@ export default {};
 
 .testimonial__info {
   text-align: right;
-  padding: 14px;
+  padding: 0.9rem;
   display: inline-block;
   vertical-align: middle;
   width: 30%;
@@ -92,13 +93,14 @@ export default {};
 }
 
 .testimonial__name {
-  margin: 3px;
+  margin: 0.2rem;
   color: #ff5454;
+  font-size: 2rem;
 }
 
 .testimonial__subtitle {
   margin: 0;
-  font-size: 18px;
+  font-size: 1.1rem;
   color: #ccc;
 }
 
@@ -113,90 +115,6 @@ export default {};
 }
 
 .testimonial__text {
-  margin: 3px;
+  margin: 0.2rem;
 }
-
-/* 
-    how to set an img next to text ?
-    -convert the the image parent container into an inline-block 
-    - sit size to it 
-    -   make sure the text container inline-block too 
-    - use text-align to center and vertical-align to set them in the middle 
-
-    How to blur an html element ?
-    filter: blue(10px)
-
-    What else filters can control ?
-    blur, brightness, contast, drop Shadow, grayscale, hue rotate, invert , opacity, saturate,sepia
-
-----------------------------
-19/09/21
-// Unites
-First imoprtant rule: What is the containeing block for (a fixed element) ?
-viewport
-
-Second imoprtant rule: What is the containing block for (an absolute element) ?
-*ancestor's content + padding
-ancestor is the first element which does not have static position, should be (absolute/relative/fixed/sticky) 
-
-Third imoprtant rule: What is the containing block for (an static/relative element) ?
-*ancestor's content only
-ancestor is the first block level element
-
-How to set constraints for width of something ?
-div {
-    width: 90%,
-    max-width: 500px // i think it is obvious 
-    min-width: 200 // this one too
-}
-
-How does rem work ?
-it's a dynamic unit, it takes the default root size of the browser and mutpli it 
-example = root-size (10px) * 1.1rem = 11px 
-
-How does the em works ?
-similar to rem but it inherit its base value from parent element 
-
-Can rem be used for another attributes than fonts ?
-yes but it will always refer to the base font size for its calculations 
-
-Is there a tricky way to use rem ?
-html{
-  font-size:16px ; // it means 16px is equal to 1rem
-}
-
-Please on more trick for allah sake 
-html {
-  font-size:16px;
-  @media only screen and (max-width:991px) {
-    font-size:14px;
-  }
-}
-
-Can rem be used for margin and padding ?
-yes, because when you have bigger font you will need bigger or smaller margin
-
-How to configure a backdrop ?
-{
-    position :fixed;
-    top:0;
-    left:0;
-    z-index:0;
-    width;100%; or vw
-    height;100%; or vh
-    background:something;
-}
-
-is using vw includes scrollbars on windows? and how to solve it ?
-- Use width: 100%  instead of vw: 100
-- Add overflow-x: hidden;  to the body selector in the shared.css file to hide the horizontal scrollbar (or overflow-y: hidden  to hide the vertical scrollbar)
-Alternatively you could also use the ::-webkit-scrollbar pseudo element. Simply add the following code to the shared.css file:
-body: :-webkit-scrollbar {
-    width: 0
-}
-
-
-
-
-*/
 </style>

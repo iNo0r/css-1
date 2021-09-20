@@ -457,15 +457,22 @@ export default {};
 
 <style>
 #product-overview {
-  background-image: url("../images/freedom.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: left 10% bottom 20%;
-  background-origin: border-box;
-  background-clip: border-box;
-  width: 100%;
-  height: 528px;
-  padding: 10px;
+  background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
+    url("../images/freedom.jpg") left 10% bottom 70% / cover no-repeat
+      border-box,
+    #ff1b68;
+  /* background-image: url("freedom.jpg");
+    background-size: cover;
+    background-position: left 10% bottom 20%; */
+  /* background-repeat: no-repeat;
+    background-origin: border-box;
+    background-clip: border-box; */
+  /* background-image: linear-gradient(180deg, red 70%, blue 60%, rgba(0,0,0,0.5)); */
+  /* background-image: radial-gradient(ellipse farthest-corner at 20% 50%, red, blue 70%, green); */
+  width: 100vw;
+  height: 33vh;
+  margin-top: 2.75rem;
+  /* border: 5px dashed red; */
   position: relative;
 }
 
@@ -491,8 +498,8 @@ export default {};
 .plan {
   background: #d5ffdc;
   text-align: center;
-  padding: 16px;
-  margin: 8px;
+  padding: 1rem;
+  margin: 0.5rem;
   display: inline-block;
   width: 30%;
   vertical-align: middle;
@@ -507,7 +514,7 @@ export default {};
 .plan__annotation {
   background: white;
   color: #19b84c;
-  padding: 8px;
+  padding: 0.5rem;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
 }
@@ -535,18 +542,18 @@ export default {};
 }
 
 .plan__feature {
-  margin: 8px 0;
+  margin: 0.5rem 0;
 }
 
 #key-features {
   background: #ff1b68;
-  margin-top: 80px;
-  padding: 16px;
+  margin-top: 5rem;
+  padding: 1rem;
 }
 
 #key-features .section-title {
   color: white;
-  margin: 32px;
+  margin: 2rem;
 }
 
 .key-feature__list {
@@ -569,106 +576,66 @@ export default {};
   border: 2px solid #424242;
   border-radius: 50%;
   margin: auto;
-}
-.key-feature__image {
-  padding: 20px;
+  padding: 1.5rem;
 }
 
 .key-feature__description {
   text-align: center;
   font-weight: bold;
   color: white;
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 
 /* h1 {
     font-family: sans-serif;
 } */
 
-/* notes & questions */
+.modal {
+  position: fixed;
+  display: none;
+  z-index: 200;
+  top: 20%;
+  left: 30%;
+  width: 40%;
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
 
-/* 
-1- What is the behavior of { background-image: url("freedom.jpg");background-color: black;} ?
-  -the image will still be visible because you can define multiple backgrounds
+.modal__title {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
 
-2- What is the behavior of { background: url("freedom.jpg");background: black;} ?
-What ever comes after will cancle what before it 
+.modal__actions {
+  text-align: center;
+}
 
-3- What is the behavior of {  background: url("freedom.jpg");background-size: 100px;}
-image will be reated vertically and horizontally.
+.modal__action {
+  border: 1px solid #0e4f1f;
+  background: #0e4f1f;
+  text-decoration: none;
+  color: white;
+  font: inherit;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
 
-4- What are the background-size parameters ?
-background-size: width height
-background-size: cover // will fill the container reasonbly // with no empty spaces
-background-size: contain // will make sure to show all of the photo 
+.modal__action:hover,
+.modal__action:active {
+  background: #2ddf5c;
+  border-color: #2ddf5c;
+}
 
-5- How to controll "repeat" on a background?
-property = background-repeat
-values = no-repeat, repeat-x, repeat-y
+.modal__action--negative {
+  background: red;
+  border-color: red;
+}
 
-6- How to prevent another background appearing in the back of the background when moving it ?
-background-repeat: no-repeat
-
-7- why it is important to set size to cover and position to center ?
-cover will make sure the most possible of the picture is shown
-center will start will expand it 
-
-8- what is the differnce between using px and % in determining background-size: right top ; ?
-px will push it 
-
-% will crupt 
-
-9- what is the behavior of {background-position: 0% 100%;}
-showing full bottom will have heigher priority of top
-
----------------------------------------------
-
-14- What is {background-postion: center;} equal to ?
-background-position: 50% 50%
-
-15- What is {background-position: left top ;} equal to?
-background-position : 0% 0% ;
-It means positon context will start from left & top 
-
-16- What does {background-position: left 10% bottom 5% ;}  mean ?
-it will crop 10% from left, and 5% from bottom 
-
-17-  Define background-origin 
-  set background positioning area , (connect to background-position)
-  *it is the box sizing of background
-
-18- Define background-clip 
-  defines whethear backgrround extends underneath border
-
-19- Define background-attachment ?
-  setes the scrolling behaviour of the background image 
-
-20- What is the behaviour of {background-origin : content-box ;} ?
-if html tag has padding it will show it on sides 
-
-21- What is the behaviour of {background-origin : border-box ;} ?
-if there is border, beackground it will go beneath it 
-
-22- What is the behaviour of {background-clip : content-box ;} ?
-it will not go beneath border or padding
-
-23- What is the behaviour of {background-clip : padding-box ;} ?
-it will not go beneath padding but not border
-
-24 How to control the scroll behaviour or a background  ?
-utilizing background-attachment: local/fixed/scroll
-scroll : image will stay in palce and conten will scroll above it 
-fixed : image will fixed to viewport  
-
-25 How to use this shorthand "background" ?
-background: url position/size repeat  (clip&origin) attachment
-example : background: url("freedom.jpg"); left 10% top 5%/cover no-repeat border-box scroll
-example2 : background: url("freedom.jpg"); left 10% top 5%/cover no-repeat border-box content box scroll
-
-
-
-
-
-
-*/
+.modal__action--negative:hover,
+.modal__action--negative:active {
+  background: #ff5454;
+  border-color: #ff5454;
+}
 </style>
