@@ -638,4 +638,37 @@ export default {};
   background: #ff5454;
   border-color: #ff5454;
 }
+
+/* 
+
+Name a website will help with giving the actual css width on mobile devices. 
+https://www.mydevice.io/
+
+Why in some cases the website will appear on a mobile as a desktop site ?
+because meta is not decalred, without it, implementing web mobile design can't be done
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+How how to prevent user from zooming in-out on mobile ?
+<meta name="viewport" content="width=device-width,initial-scale=1.0 , user-scalabel-no">
+
+How to restrict the max zoom level ?
+<meta name="viewport" content="width=device-width,initial-scale=1.5 , maximum-scale=2.0>
+the user will not be able to zoom more that 2.0
+
+How to restrict zoom out level ?
+<meta name="viewport" content="width=device-width,initial-scale=1.5 , minimum-scale=0.5>
+
+What can be done in case of your website is not is intended to serve for mobile ?
+delete the viewport meta tag, so at least can represent the website same as desktop
+
+*What is the correct approach of developing new Website ?
+we should have started making the mobile website first, because most of useres on mobile 
+and after mobile design finishes, we head to desktop
+
+What we usually change in responsive design ?
+heeader
+footer
+font-size
+
+*/
 </style>
