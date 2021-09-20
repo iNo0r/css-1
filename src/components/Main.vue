@@ -470,7 +470,7 @@ export default {};
   /* background-image: linear-gradient(180deg, red 70%, blue 60%, rgba(0,0,0,0.5)); */
   /* background-image: radial-gradient(ellipse farthest-corner at 20% 50%, red, blue 70%, green); */
   width: 100vw;
-  height: 33vh;
+  height: 40vh;
   margin-top: 2.75rem;
   /* border: 5px dashed red; */
   position: relative;
@@ -487,6 +487,16 @@ export default {};
   position: absolute;
   bottom: 5%;
   left: 3%;
+  font-size: 1.6rem;
+}
+/* 1 rem = 16 px, 40rem = 640px */
+@media (min-width: 30rem) {
+  #product-overview {
+    height: 33vh;
+  }
+  #product-overview h1 {
+    font-size: 3rem;
+  }
 }
 
 .plan__list {
@@ -500,8 +510,8 @@ export default {};
   text-align: center;
   padding: 1rem;
   margin: 0.5rem;
-  display: inline-block;
-  width: 30%;
+  /* display: inline-block; */
+  /* width: 30%; */
   vertical-align: middle;
 }
 
@@ -669,6 +679,33 @@ What we usually change in responsive design ?
 heeader
 footer
 font-size
+----------------------------------------
+
+Decalare a media query if width is more or equall to 40 rem 
+@media (min-width: 40rem) {
+
+}
+
+How to determine the write @media queries ?
+-A cheacking is needed, we go to mydevice.io 
+then we set design constraints that fits the most possible devices 
+design for mobile first // multuple divces is applicable in some cases
+design for tablet second  // multuple divces is applicable in some cases
+then websites 
+-Utilizing breaking points of queries, for example:
+we start with general which is phones 
+@media (min-width: 40rem) { //more then phones which is tablets
+
+}
+@media (min-width: 60rem) { //maybe websites
+
+}
+and so on 
+
+Where is the proper location of medai query breaking points ?
+at the bottom 
+---------------------------
+
 
 */
 </style>
