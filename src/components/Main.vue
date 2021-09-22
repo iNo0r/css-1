@@ -471,7 +471,7 @@ export default {};
   /* background-image: radial-gradient(ellipse farthest-corner at 20% 50%, red, blue 70%, green); */
   width: 100vw;
   height: 40vh;
-  margin-top: 2.75rem;
+  /* margin-top: 2.75rem; */
   /* border: 5px dashed red; */
   position: relative;
 }
@@ -490,14 +490,6 @@ export default {};
   font-size: 1.6rem;
 }
 /* 1 rem = 16 px, 40rem = 640px */
-@media (min-width: 30rem) {
-  #product-overview {
-    height: 33vh;
-  }
-  #product-overview h1 {
-    font-size: 3rem;
-  }
-}
 
 .plan__list {
   width: 80%;
@@ -513,6 +505,20 @@ export default {};
   /* display: inline-block; */
   /* width: 30%; */
   vertical-align: middle;
+  min-width: 12rem;
+}
+@media (min-width: 40rem) {
+  #product-overview {
+    height: 33vh;
+  }
+  #product-overview h1 {
+    font-size: 3rem;
+  }
+
+  .plan {
+    display: inline-block;
+    width: 30%;
+  }
 }
 
 .plan--highlighted {
@@ -574,9 +580,15 @@ export default {};
 }
 
 .key-feature {
-  display: inline-block;
-  width: 30%;
-  vertical-align: top;
+  display: block;
+}
+
+@media (min-width: 40rem) {
+  .key-feature {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+  }
 }
 
 .key-feature__image {
@@ -705,6 +717,40 @@ and so on
 Where is the proper location of medai query breaking points ?
 at the bottom 
 ---------------------------
+
+What is the sutitabel unit to determine widths of containers thta contains text ?
+rem
+
+How to configure condtionally min width & height in @media query ?
+@media (min-width: 40rem) and (min-height: 90rem) {
+}
+
+What is a good practice for responisve design for IPad ?
+to change  image position and maybe height and font-size
+
+What is the quirey's conditioin for portarit mide ?
+@media (min-width: 40rem) and (orientation: portrait) {
+}
+@media (min-width: 40rem) and (orientation: landscape) {
+}
+
+How to configure 2 confitoins and fire if one has been met ?
+by adding a comma instead of and
+@media (min-width: 40rem) , (orientation: landscape) {
+}
+
+What are the main things to be considered when working on responsive design ?
+mobile screens (portait & landscape)
+tablet screens (portait & landscape)
+laptop screens (landscape)
+monitor screens (landscape)
+
+How to positioin footer correctly ?
+by pushing by document flow 
+header => content => footer 
+if header = 4 rem 
+and footer = 3 rem 
+content height will be calc(100vh - 4 rem - 3rem)
 
 
 */
