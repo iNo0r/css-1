@@ -752,6 +752,105 @@ if header = 4 rem
 and footer = 3 rem 
 content height will be calc(100vh - 4 rem - 3rem)
 
+-----------------------------------
+
+/* flex */
+/*
+
+When assigning flex as value for a property, What is the outcome?
+the parent = flex container
+the childern = flex items 
+
+What are the main accompanying properties to flex parent ?
+flex-flow:
+*felx-wrap
+flex-direction
+justify-content
+align-content
+align-items
+
+What are the main accompanying properties to flex child ?
+order
+flex
+align-self
+
+
+Should check on display flex turtorial, Too easy but many conepts of flex parent 
+https://www.udemy.com/course/css-the-complete-guide-incl-flexbox-grid-sass/learn/lecture/9654194#notes
+
+What is the Behaviour of (flex) parent + childeren ?
+resizable 
+parent: 
+  width : fills the available width as block element 
+  height : will stretch to the heights height of its childeren
+
+childeren:
+  width: if width unspecified will fill the content
+  *width: if width specified and not spece left, will just fit content 
+  height will fit the parent continer unless height specified 
+
+What is the behaviour of (inline-flex)?
+unresizable 
+parent;
+  width is not resizble, it will fit exactyly its content
+  height: will be determined by the heighst child
+
+childeren;
+behave same as flex but fixed 'noting is resizable'
+
+
+*How to make element to fall dynamically to a second row when width of container reduced?
+{
+  diplay:flex;
+  flex-wrap: wrap
+}
+
+
+What of the values of flex-wrap ?
+flex-wrap : nowrap // default : elements will not fall into second row
+felx-wrap : wrap // on width change elements will fall to a second row 
+flex-warp : wrap-reverse // element from the begining will fall first
+note: if the flow directon is coloum and you reduce the height, elements will fall to the hoizontally
+else if flow direction is row and you reduce the width, element will fall vertically
+
+How to revers the document flow of flex-wrap : wrap; ?
+{
+  flex-wrap: wrap-revers;
+}
+
+How to change the flow direction of a flex container ?
+{
+  diplay:flex;
+  flex-direction: column
+}
+
+What of the values of flex-wrap ?
+flex-direction: row //default 
+flex-direction: column
+flex-direction: row-revers: its documnent flow starts from right to left
+flex-direction: column-revers: its documnet dlow starts bottom to top
+  
+
+How to write both of fex-direction & flex-wrap, in shorthand ?
+flex-flow: (direction) (wrap)
+example: flex-flow: row wrap
+
+How to center items horizontally ?
+justify-content: center
+
+How center items vertically ?
+align-items: center 
+note: the default value of align items is "stretch", which is the on responsible for stretch the items if their height not declared, so when using (align-items: center) auto stretch will be cancled
+
+Orther values for justify content and alignitems ?
+flex-start
+flex-end
+
+
+
+
+
+
 
 */
 </style>
