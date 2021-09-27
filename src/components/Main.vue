@@ -845,6 +845,59 @@ note: the default value of align items is "stretch", which is the on responsible
 Orther values for justify content and alignitems ?
 flex-start
 flex-end
+ _______________________________________________________
+
+what does align-content do?
+align-content : center; // will play its role when when content wrapped, 
+values of it same as its predessors, center, flex-start, flex-end 
+use case : when when elements warped into 2 rows or columns, huge space will occurs, here we can leverage align-content 
+
+how to define a header that aligns nvaigation's icon to the left and buttons to the right ?
+header {
+  display:flex;
+  flex-direction: row ; //which is default 
+  justify-content: space-between ; // (main axess) first item will go to the left, scond to the right with space in the middle 
+  align-items : center ; // (cross axess) will align it vertically 
+
+}
+
+How to display hidden item with display: none and you want to display it in a media quirey ?
+display :flex
+
+How to set a space between items in flex container ?
+Child	
+gap: 10px
+
+How to make a controllable  grid with flex ?
+Parent 
+	flex
+	wrap // so items will fall down, when space not enough
+Child	
+	grow: 1 or anything // items will extend to fill the container
+	min and max width // to set the limit of grow
+How to set space between elements ?
+Assigning a value to justify-content/ align-items 
+Space-between // space between elements
+Space-around // space around elements it is good for assigning space before and after first&last item 
+
+
+How to change the displaying order of an item ?
+Child 
+	it will change it according the main axes 
+	the default order for each element is 0 
+	order: 1 // will set it at the end of the main axes
+	order: -1 // at the beginning of the main axes
+
+How to align a single element at the end or start of a cross axes ?
+Child {
+	align-self:flex-start / end 
+}
+
+
+How to let the item to occupy the free space of a container ?
+Child {
+	flex-grow: 1 // default is 0 
+}
 
 
 
